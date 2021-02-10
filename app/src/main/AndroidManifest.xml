@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.antixiansoftware.travelling">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Traveller"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_bTXJ3BfQroZI1L" />
+
+        <activity android:name=".Loginsign.SharedPrefManager"></activity>
+        <activity android:name=".Travel.TravelMoreActivity"></activity>
+        <activity android:name=".Goods.GoodsMoreActivity" />
+        <activity
+            android:name=".Travel.TrvBooksActivity"
+            android:parentActivityName=".Travel.Trvcollections" />
+        <activity
+            android:name=".Main.ContactActivity"
+            android:parentActivityName=".Main.MainActivity" />
+        <activity
+            android:name=".Travel.Trvcollections"
+            android:parentActivityName=".Main.MainActivity" />
+        <activity
+            android:name=".Goods.Goodscollection"
+            android:parentActivityName=".Main.MainActivity" />
+        <activity
+            android:name=".Goods.GoodsBookActivity"
+            android:parentActivityName=".Goods.Goodscollection" />
+        <activity
+            android:name=".Goods.GoodsVehicalsActivity"
+            android:parentActivityName=".Goods.Goodscollection" />
+        <activity
+            android:name=".Travel.TravelVehicalsActivity"
+            android:parentActivityName=".Travel.Trvcollections" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBC3dFuU7wm2Ae2c3wnnnG_YwQJz66VJzI" />
+
+        <activity android:name=".Main.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Map.MapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Map.PermissionActivity" />
+        <activity android:name=".Main.SlidingActivity2" />
+        <activity android:name=".Main.SlidingActivity" />
+        <activity
+            android:name=".Main.TermsAndCondition"
+            android:label="Terms And Conditions"
+            android:parentActivityName=".Main.MainActivity" />
+        <activity
+            android:name=".Main.Home"
+            android:label="Home"
+            android:parentActivityName=".Main.MainActivity" />
+        <activity
+            android:name=".Main.About"
+            android:label="About"
+            android:parentActivityName=".Main.MainActivity" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Loginsign.SignUpActivity" />
+        <activity android:name=".Loginsign.LoginActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

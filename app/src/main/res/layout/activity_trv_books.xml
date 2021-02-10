@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.antixiansoftware.travelling.Travel.TrvBooksActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:id="@+id/toolbar1"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:elevation="4dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/aguafina_script"
+                android:paddingLeft="120dp"
+                android:text="Contact Form"
+                android:layout_below="@id/toolbar1"
+                android:textColor="#673AB7"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+                tools:layout_editor_absoluteX="1dp" />
+
+
+            <!--        <Button-->
+            <!--            android:id="@+id/button1"-->
+            <!--            android:layout_width="30dp"-->
+            <!--            android:layout_height="30dp"-->
+            <!--            android:layout_below="@+id/textView18"-->
+            <!--            android:layout_alignParentStart="true"-->
+            <!--            android:layout_alignParentLeft="true"-->
+            <!--            android:layout_marginStart="35dp"-->
+            <!--            android:layout_marginLeft="36dp"-->
+            <!--            android:layout_marginTop="25dp"-->
+            <!--            android:background="@drawable/contct"-->
+            <!--            app:layout_constraintEnd_toStartOf="@+id/textView18"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/textView18">-->
+
+            <!--        </Button>-->
+
+
+            <!--        <Button-->
+            <!--            android:id="@+id/button2"-->
+            <!--            android:layout_width="30dp"-->
+            <!--            android:layout_height="30dp"-->
+            <!--            android:layout_below="@+id/button1"-->
+            <!--            android:layout_alignParentStart="true"-->
+            <!--            android:layout_alignParentLeft="true"-->
+            <!--            android:layout_marginStart="35dp"-->
+            <!--            android:layout_marginLeft="36dp"-->
+            <!--            android:layout_marginTop="25dp"-->
+            <!--            android:background="@drawable/phone"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/button1"-->
+            <!--            tools:layout_editor_absoluteX="18dp">-->
+
+            <!--        </Button>-->
+
+            <!--        <Button-->
+            <!--            android:id="@+id/button3"-->
+            <!--            android:layout_width="30dp"-->
+            <!--            android:layout_height="30dp"-->
+            <!--            android:layout_below="@+id/button2"-->
+            <!--            android:layout_alignParentStart="true"-->
+            <!--            android:layout_alignParentLeft="true"-->
+            <!--            android:layout_marginStart="35dp"-->
+            <!--            android:layout_marginLeft="36dp"-->
+            <!--            android:layout_marginTop="25dp"-->
+            <!--            android:background="@drawable/calender"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/button2">-->
+
+            <!--        </Button>-->
+
+            <!--        <Button-->
+            <!--            android:id="@+id/button4"-->
+            <!--            android:layout_width="30dp"-->
+            <!--            android:layout_height="30dp"-->
+            <!--            android:layout_below="@+id/button3"-->
+            <!--            android:layout_alignParentStart="true"-->
+            <!--            android:layout_alignParentLeft="true"-->
+            <!--            android:layout_marginStart="35dp"-->
+            <!--            android:layout_marginLeft="35dp"-->
+            <!--            android:layout_marginTop="25dp"-->
+            <!--            android:background="@drawable/calender"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/button3">-->
+
+            <!--        </Button>-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView18"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView18"
+                tools:layout_editor_absoluteX="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/txname"
+                    android:drawableLeft="@drawable/namee"
+                    android:drawablePadding="10dp"
+                    android:layout_height="match_parent"
+                    android:hint="Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView17"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView17"
+                tools:layout_editor_absoluteX="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txphno"
+                    android:drawableLeft="@drawable/contactno"
+                    android:drawablePadding="10dp"
+                    android:hint="Phone No." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <EditText
+                android:id="@+id/textView1"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView16"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:maxLines="1"
+                android:layout_marginTop="20dp"
+                android:hint="Starting journey"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                tools:layout_editor_absoluteX="55dp"
+                android:drawableLeft="@drawable/calf"
+                android:drawablePadding="10dp" />
+
+
+            <EditText
+                android:id="@+id/textView2"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Ending Journey"
+                android:drawableLeft="@drawable/calf"
+                android:drawablePadding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView1"
+                tools:layout_editor_absoluteX="55dp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="53dp"
+                android:onClick="onClick"
+                android:text="Payment"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

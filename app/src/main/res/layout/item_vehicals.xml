@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card1"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    xmlns:app="http://schemas.android7.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="117dp">
+
+
+            <!--1-->
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="92dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/changeimg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/edtp1"
+                android:layout_width="299dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:ems="10"
+                android:hint="Vehical Name"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                tools:ignore="NotSibling" />
+
+            <TextView
+
+                android:id="@+id/edtp2"
+                android:layout_width="299dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edtp1"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:ems="10"
+                android:hint="Seating Capacty"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/edtp3"
+                android:layout_width="299dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edtp2"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:ems="10"
+                android:hint="Rate/Km"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+
+        </RelativeLayout>
+
+        <!--                android:rating="3.5"-->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

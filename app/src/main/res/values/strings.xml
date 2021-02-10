@@ -1,0 +1,20 @@
+<resources>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_tab1">tab</string>
+    <!--    <string name="google_api_key">AIzaSyBkzTjylXdAYApjeNUyXavotbAJD_46HM4</string>-->
+    <string name="tab_text_1">Travels</string>
+    <string name="tab_text_2">Goods</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="names">Info:
+            Toyoto Land Cruiser
+            Seating Capacity 8
+            Rate 9.0 KMPL</string>
+
+
+    <string name="queryhint">Search Your Destination</string>
+    <string name="rate_app">Rate The App</string>
+
+</resources>

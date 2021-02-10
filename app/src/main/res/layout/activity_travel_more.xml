@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Travel.TravelMoreActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--1-->
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="92dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/changeimg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/edtp1"
+                android:layout_width="299dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:ems="10"
+                android:hint="Vehical Name"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                tools:ignore="NotSibling" />
+
+            <TextView
+
+                android:id="@+id/edtp2"
+                android:layout_width="299dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edtp1"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:ems="10"
+                android:hint="Seating Capacty"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/edtp3"
+                android:layout_width="299dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edtp2"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:ems="10"
+                android:hint="Rate/Km"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+<!--            <com.thebluealliance.spectrum.SpectrumPalette-->
+<!--                android:id="@+id/palette"-->
+<!--                android:layout_below="@id/edtp3"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:spectrum_colors="@color/colorPrimaryDark"/>-->
+
+
+        </RelativeLayout>
+
+        <!--            android:rating="3.5"-->
+
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView3"-->
+<!--android:layout_width="130dp"-->
+<!--android:layout_height="125dp"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--app:srcCompat="@drawable/trl3" />-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView4"-->
+<!--android:layout_width="130dp"-->
+<!--android:layout_height="125dp"-->
+<!--android:layout_marginStart="30dp"-->
+<!--android:layout_marginLeft="28dp"-->
+<!--app:layout_constraintStart_toEndOf="@+id/imageView3"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--app:srcCompat="@drawable/trl6" />-->
+
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView5"-->
+<!--android:layout_width="130dp"-->
+<!--android:layout_height="125dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--app:layout_constraintStart_toStartOf="@+id/imageView7"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/imageView7"-->
+<!--app:srcCompat="@drawable/car33" />-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView6"-->
+<!--android:layout_width="130dp"-->
+<!--android:layout_height="125dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:layout_marginStart="30dp"-->
+<!--app:layout_constraintStart_toEndOf="@+id/imageView5"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/imageView8"-->
+<!--app:srcCompat="@drawable/trl5"-->
+<!--android:layout_marginLeft="30dp" />-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView7"-->
+<!--android:layout_width="130dp"-->
+<!--android:layout_height="125dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--app:layout_constraintStart_toStartOf="@+id/imageView3"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
+<!--app:srcCompat="@drawable/trl4" />-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView8"-->
+<!--android:layout_width="130dp"-->
+<!--android:layout_height="125dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:layout_marginStart="30dp"-->
+<!--app:layout_constraintStart_toEndOf="@+id/imageView7"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/imageView4"-->
+<!--app:srcCompat="@drawable/trl2"-->
+<!--android:layout_marginLeft="30dp" />-->
